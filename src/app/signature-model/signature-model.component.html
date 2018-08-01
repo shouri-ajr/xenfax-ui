@@ -1,0 +1,140 @@
+<div class="modal fade in show customStyleSign" id="signature" style="display: block; padding-right: 17px;">
+  <!--Signature  Modal -->
+
+<div class="modal-dialog modal-lg ">
+<div class="modal-content">
+
+<!-- Modal Header -->
+<div class="modal-header">
+<div class="navTabsPart">
+<ul class="nav  nav-tabs">
+<li class="nav-item ">
+ <a class="nav-link  show" [ngClass]="{ 'active' : savedSignature }" (click)="toggleTabs('saveSign')">Saved Signatures</a>
+</li>
+<li class="nav-item">
+ <a class="nav-link show" [ngClass]="{ 'active' : drawSignature }" (click)="toggleTabs('drawSign')">Draw it in</a>
+</li>
+<li class="nav-item">
+ <a class="nav-link show" [ngClass]="{ 'active' : typeSignature }" (click)="toggleTabs('typeSign')">Type it in</a>
+</li>
+<li class="nav-item">
+ <a class="nav-link show " [ngClass]="{ 'active' :  uploadSignature }" (click)="toggleTabs('uploadSign')">Upload image</a>
+</li>
+</ul>
+</div>
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<div class="modal-body">
+<div class="tab-content">
+<div *ngIf='savedSignature' class="savedSignatures tab-pane fade in active show" id="savedSignatures">
+       <h4>Saved Signatures</h4>
+       <div class="selectedSign">
+           <img src="../../assets/images/sign.jpg" alt="Signature">
+       </div>
+       <div class="listoFSignatures">
+           <ul class="signList">
+               <li class='selected'>
+               <a href=""> <img src="../../assets/images/sign.jpg" alt="Signature"></a>
+                   <a href="" class="deleteSign">Delete</a>
+               </li>
+               <li>
+                   <a href=""><img src="../../assets/images/sign.jpg" alt="Signature"></a>
+                   <a href="" class="deleteSign">Delete</a>
+               </li>
+               <li>
+                   <a href=""><img src="../../assets/images/sign.jpg" alt="Signature"></a>
+                   <a href="" class="deleteSign">Delete</a>
+               </li>
+           </ul>
+       </div>
+   <div class="inserButton">
+       <div class="inSertpar">
+           <p>I understand this is a legal representation of my signtaure.</p>
+       </div>
+       <div class="insbtnLink">
+           <div class="ancLinkSig">
+           <a href="" class='insertSig'>Insert</a>
+       </div>
+       </div>
+   </div>
+</div>
+<div  *ngIf='drawSignature' class="drawSign tab-pane fade in active show" id="drawInIt">
+   <h4>Draw In It Signatures</h4>
+   <div class="drawSignWMouse">
+       <p>Draw your signature with your mouse.</p>
+   </div>
+   <div class="forSignature">
+       <!-- <canvas id="signature" width="500" height="200" "></canvas> -->
+       <canvas id="signature-pad" class="signature-pad" style="border: 1px solid #ddd;" width=500 height=200></canvas>
+       <a  id="clear-signature">Clear</a>
+
+   </div>
+   <div class="inserButton">
+       <div class="inSertpar">
+            <p>I understand this is a legal representation of my signtaure.</p>
+       </div>
+       <div class="insbtnLink">
+           <div class="ancLinkSig">
+           <a href="" class='insertSig'>Insert</a>
+       </div>
+       </div>
+   </div>
+</div>
+<div *ngIf='typeSignature' class="typeInItSign tab-pane fade in active show" id="tyepInIt">
+   <h4>Type In It Signatures</h4>
+   <div class="signTypeing">
+       <p>Type in your name</p>
+       <input type="text" class='form-control' placeholder='some signature'>
+   </div>
+   <div class="changeFonts">
+       <a href="">Change Fonts</a>
+   </div>
+   <div class="inserButton">
+       <div class="inSertpar">
+            <p>I understand this is a legal representation of my signtaure.</p>
+       </div>
+       <div class="insbtnLink">
+           <div class="ancLinkSig">
+           <a href="" class='insertSig'>Insert</a>
+       </div>
+       </div>
+   </div>
+</div>
+<div *ngIf='uploadSignature' class="upLoadSignatures tab-pane fade in active show" id="uploadSign">
+   <h4>Upload Signatures</h4>
+   <div class="upLoadSigSec">
+       <p>Upload a picture of your signature</p>
+       <div class="uploadImage">
+       <div style="height:0px;overflow:hidden">
+           <input type="file" id="fileInput" name="fileInput" #fileInput/>
+        </div>
+           <a onclick="chooseFile();" class='uploadLink'><img src="../../assets/images/Upload.png" alt="Upload"> Upload</a>
+       </div>
+       <!-- <label id="#u"> Upload
+        <input type="file" id="File"   size="60" >
+        </label>  -->
+
+       <p>Maximum File Size: 40Mb</p>
+       <p>Acceptable File Formats: png,jpg,jpeg,bmp,gif</p>
+   </div> 
+   <div class="uploadBtnSign">
+      
+   </div>
+   <div class="inserButton">
+       <div class="inSertpar">
+           <p>I understand this is a legal representation of my signtaure.</p>
+       </div>
+       <div class="insbtnLink">
+           <div class="ancLinkSig">
+           <a href="" class='insertSig'>Insert</a>
+       </div>
+       </div>
+   </div>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
