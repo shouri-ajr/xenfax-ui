@@ -2,10 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { LeftnavComponent } from './leftnav/leftnav.component';
-import { NumbersComponent } from './numbers/numbers.component';
 import { DocumentsComponent } from './documents/documents.component';
+import { SignatureModelComponent } from './signature-model/signature-model.component';
 
 import { SendfaxComponent } from './sendfax/sendfax.component';
 
@@ -17,6 +15,7 @@ import { ModelEditFaxComponent } from './model-edit-fax/model-edit-fax.component
 @NgModule({
   declarations: [
     AppComponent,
+<<<<<<< HEAD
     HeaderComponent,
     LeftnavComponent,
     NumbersComponent,
@@ -27,6 +26,10 @@ import { ModelEditFaxComponent } from './model-edit-fax/model-edit-fax.component
     InnerPageComponent
     ModelEditFaxComponent
 
+=======
+    DocumentsComponent,
+    SignatureModelComponent
+>>>>>>> signup
   ],
   imports: [
     BrowserModule

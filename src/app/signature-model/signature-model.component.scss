@@ -1,0 +1,171 @@
+/* Signature Styles */
+.customStyleSign .modal-dialog .modal-header {
+  padding: 0px 1rem;
+  background: #efefef;
+}
+.navTabsPart li.nav-item {
+  padding: 0 1rem;
+}
+.navTabsPart ul.nav-tabs li a.nav-link {
+  color: #333;
+  font-weight: 600;
+  border-bottom: 3px solid transparent;
+  padding: .5rem .3rem;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+}
+.nav-tabs {
+  border-bottom: 0px;
+}
+.navTabsPart ul li a.nav-link:hover,
+.navTabsPart ul li a.active.show {
+  border-bottom: 3px solid #FF5B48;
+  background: none;
+  border-radius: 0px;
+}
+.customStyleSign .modal-header .close {
+  margin-top: -.6rem;
+}
+.savedSignatures,
+.upLoadSignatures,
+.typeInItSign,
+.drawSign {
+  text-align: center;
+  padding: 0.3rem;
+}
+.inserButton p {
+  padding: 1rem 0 0 1rem;
+}
+.insbtnLink .insertSign {
+  padding: .2rem 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  width: 110px;
+  margin-right: 2rem;
+}
+.selectedSign {
+  width: 60%;
+  margin: 0px auto 1rem auto;
+}
+.selectedSign img {
+  width: 100%;
+  height: 120px;
+}
+.listoFSignatures {
+  margin: 2rem 0rem 4rem;
+}
+ul.signList {
+  text-align: left;
+}
+ul.signList li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+.listoFSignatures ul li img {
+  width: 150px;
+  height: auto;
+  border: 1px solid #ddd;
+  padding: 5px 5px;
+  display: block;
+}
+.listoFSignatures ul li.selected img {
+  border: 1px solid #FF5B48;
+}
+ul.signList li a.deleteSign {
+  color: #FF5B48;
+  text-align: right;
+  display: block;
+  padding-top: 0.3rem
+}
+.upLoadSigSec {
+  text-align: left;
+  padding: 1rem;
+}
+.upLoadSigSec p {
+  padding-bottom: 0.3rem;
+  margin-bottom: 0rem;
+}
+.signTypeing {
+  text-align: left;
+  padding: 1rem;
+  margin: 2rem 0px;
+}
+.drawSignWMouse {
+  text-align: left;
+  padding: 1rem;
+  margin: .5rem 0px 1rem;
+}
+.signTypeing p,
+.drawSignWMouse p {
+  font-weight: 600;
+  color: #333;
+}
+.signTypeing .form-control {
+  border-radius: 0px;
+  width: 82%;
+}
+.changeFonts {
+  text-align: left;
+  padding: 1rem;
+}
+.changeFonts a {
+  font-weight: 600;
+  color: #333;
+}
+
+.changeFonts a:hover {
+  color: #FF5B48;
+}
+/* upload */
+
+.uploadImage {
+  padding: 1rem 0rem;
+  color: #fff;
+  margin: 1rem 0rem;
+}
+a.uploadLink {
+  padding: 0.5rem 1rem;
+}
+.forSignature {
+  text-align: left;
+  padding: 0rem 1rem 1rem;
+}
+.forSignature canvas {
+  background: #e9ecef;
+}
+a#clear-signature {
+  display: block;
+  color: #333;
+  font-weight: 600;
+  padding: 2px 0px;
+}
+
+/* Signature Styles end*/
+label {
+  padding: 10px;
+  background: #FF5B48;
+  display: inline;
+  width: auto;
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+      background: #ccc;
+      color: #000;
+      &:before {
+          color: #000;
+      }
+  }
+  &::before {
+      content: '\f093';
+      font-family: FontAwesome;
+      color: #fff;
+      margin-right: 1%;
+      display: inline;
+      position: relative;
+  }
+}
+input[type="file"] {
+  display: none;
+}
