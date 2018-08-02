@@ -8,6 +8,7 @@ import { NumbersComponent } from './numbers/numbers.component';
 import { DocumentsComponent } from './documents/documents.component';
 import { TablesListComponent } from './tables-list/tables-list.component';
 import { InnerPageComponent } from './inner-page/inner-page.component';
+import { ModelEditFaxComponent } from './model-edit-fax/model-edit-fax.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { InnerPageComponent } from './inner-page/inner-page.component';
     DocumentsComponent,
     TablesListComponent,
     InnerPageComponent
+    ModelEditFaxComponent
   ],
   imports: [
     BrowserModule
