@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { LeftnavComponent } from './leftnav/leftnav.component';
 import { NumbersComponent } from './numbers/numbers.component';
 import { DocumentsComponent } from './documents/documents.component';
+import { ModelEditFaxComponent } from './model-edit-fax/model-edit-fax.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { DocumentsComponent } from './documents/documents.component';
     HeaderComponent,
     LeftnavComponent,
     NumbersComponent,
-    DocumentsComponent
+    DocumentsComponent,
+    ModelEditFaxComponent
   ],
   imports: [
     BrowserModule
