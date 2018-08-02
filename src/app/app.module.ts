@@ -15,7 +15,6 @@ import { ModelEditFaxComponent } from './model-edit-fax/model-edit-fax.component
 @NgModule({
   declarations: [
     AppComponent,
-<<<<<<< HEAD
     HeaderComponent,
     LeftnavComponent,
     NumbersComponent,
@@ -26,10 +25,8 @@ import { ModelEditFaxComponent } from './model-edit-fax/model-edit-fax.component
     InnerPageComponent
     ModelEditFaxComponent
 
-=======
     DocumentsComponent,
     SignatureModelComponent
->>>>>>> signup
   ],
   imports: [
     BrowserModule
