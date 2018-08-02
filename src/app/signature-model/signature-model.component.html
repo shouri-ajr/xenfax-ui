@@ -27,7 +27,7 @@
 <div class="modal-body">
 <div class="tab-content">
 <div *ngIf='savedSignature' class="savedSignatures tab-pane fade in active show" id="savedSignatures">
-       <h4>Saved Signatures</h4>
+       <h5>Saved Signatures</h5>
        <div class="selectedSign">
            <img src="../../assets/images/sign.jpg" alt="Signature">
        </div>
@@ -48,18 +48,22 @@
            </ul>
        </div>
    <div class="inserButton">
-       <div class="inSertpar">
-           <p>I understand this is a legal representation of my signtaure.</p>
-       </div>
-       <div class="insbtnLink">
-           <div class="ancLinkSig">
-           <a href="" class='insertSig'>Insert</a>
-       </div>
-       </div>
+       <div class="row">
+       <div class="col-sm-8 text-left">
+            <div class="inSertpar">
+                <p>I understand this is a legal representation of my signtaure.</p>
+            </div>
+        </div>
+       <div class="col-sm-4 text-center">
+            <div class="insbtnLink">
+                <button  class='insertSign btn btn-primary'>Insert</button>
+            </div>
+        </div>
+    </div>
    </div>
 </div>
 <div  *ngIf='drawSignature' class="drawSign tab-pane fade in active show" id="drawInIt">
-   <h4>Draw In It Signatures</h4>
+   <h5>Draw In It Signatures</h5>
    <div class="drawSignWMouse">
        <p>Draw your signature with your mouse.</p>
    </div>
@@ -70,18 +74,22 @@
 
    </div>
    <div class="inserButton">
-       <div class="inSertpar">
-            <p>I understand this is a legal representation of my signtaure.</p>
-       </div>
-       <div class="insbtnLink">
-           <div class="ancLinkSig">
-           <a href="" class='insertSig'>Insert</a>
-       </div>
-       </div>
-   </div>
+        <div class="row">
+        <div class="col-sm-8 text-left">
+             <div class="inSertpar">
+                 <p>I understand this is a legal representation of my signtaure.</p>
+             </div>
+         </div>
+        <div class="col-sm-4 text-center">
+             <div class="insbtnLink">
+                 <button  class='insertSign btn btn-primary'>Insert</button>
+             </div>
+         </div>
+     </div>
+    </div>
 </div>
 <div *ngIf='typeSignature' class="typeInItSign tab-pane fade in active show" id="tyepInIt">
-   <h4>Type In It Signatures</h4>
+   <h5>Type In It Signatures</h5>
    <div class="signTypeing">
        <p>Type in your name</p>
        <input type="text" class='form-control' placeholder='some signature'>
@@ -90,25 +98,29 @@
        <a href="">Change Fonts</a>
    </div>
    <div class="inserButton">
-       <div class="inSertpar">
-            <p>I understand this is a legal representation of my signtaure.</p>
-       </div>
-       <div class="insbtnLink">
-           <div class="ancLinkSig">
-           <a href="" class='insertSig'>Insert</a>
-       </div>
-       </div>
-   </div>
+        <div class="row">
+        <div class="col-sm-8 text-left">
+             <div class="inSertpar">
+                 <p>I understand this is a legal representation of my signtaure.</p>
+             </div>
+         </div>
+        <div class="col-sm-4 text-center">
+             <div class="insbtnLink">
+                 <button  class='insertSign btn btn-primary'>Insert</button>
+             </div>
+         </div>
+     </div>
+    </div>
 </div>
 <div *ngIf='uploadSignature' class="upLoadSignatures tab-pane fade in active show" id="uploadSign">
-   <h4>Upload Signatures</h4>
+   <h5>Upload Signatures</h5>
    <div class="upLoadSigSec">
        <p>Upload a picture of your signature</p>
        <div class="uploadImage">
        <div style="height:0px;overflow:hidden">
            <input type="file" id="fileInput" name="fileInput" #fileInput/>
         </div>
-           <a onclick="chooseFile();" class='uploadLink'><img src="../../assets/images/Upload.png" alt="Upload"> Upload</a>
+           <a onclick="chooseFile();" class='btn btn-primary'><img src="../../assets/images/Upload.png" alt="Upload"> Upload</a>
        </div>
        <!-- <label id="#u"> Upload
         <input type="file" id="File"   size="60" >
@@ -121,15 +133,19 @@
       
    </div>
    <div class="inserButton">
-       <div class="inSertpar">
-           <p>I understand this is a legal representation of my signtaure.</p>
-       </div>
-       <div class="insbtnLink">
-           <div class="ancLinkSig">
-           <a href="" class='insertSig'>Insert</a>
-       </div>
-       </div>
-   </div>
+        <div class="row">
+        <div class="col-sm-8 text-left">
+             <div class="inSertpar">
+                 <p>I understand this is a legal representation of my signtaure.</p>
+             </div>
+         </div>
+        <div class="col-sm-4 text-center">
+             <div class="insbtnLink">
+                 <button  class='insertSign btn btn-primary'>Insert</button>
+             </div>
+         </div>
+     </div>
+    </div>
 </div>
 </div>
 
