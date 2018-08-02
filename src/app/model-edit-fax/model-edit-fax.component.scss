@@ -1,0 +1,91 @@
+// colors
+$bg-light: #f7f7f7;
+$btn-hover:#ff471a;
+$white: #fff;
+$black: #000;
+$border:#bfbfbf;
+/* Edit fax */
+button.btn{
+  border-radius: 0;
+}
+.edit-sig, .edit-contnet {
+    padding-top:3rem;
+  }
+  .edit-bg-light{
+      background:$bg-light;
+}
+  .editDoc{
+   width:90%;
+   margin:0 auto;
+   padding: 2rem;
+  }
+  .edit-heading{
+     padding-bottom: 4rem;
+  }
+  #editFax{
+    .btn:focus, .btn:active {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+    .btn-white{
+      border: 1px solid #bfbfbf;
+      border-radius: 0px;
+      font-size: .95rem;
+      margin: 0 3px;
+    }
+    .edit-option-btn{
+      margin: 0 3px;
+      border-radius: 0;
+      border:1px solid $border;
+      background-color:$white;
+      &::focus{
+          outline: none !important;
+          box-shadow: none !important;
+        }
+    }
+    .edit-btn-flat{
+      background: none;
+      border:0;
+      color:#333;
+      &:hover{
+          color:#000;
+      }
+    }
+  } 
+  .eidt-topbar{
+    padding: 2% 4%;
+    width: 100%;
+    border-bottom: 1px solid $border;
+    background-color:  #e6e6e6;
+  }
+   #datepicker{
+      margin-left: 4px;
+  }
+  .edit-option-btn{
+    padding: 0;
+    background:none;
+  }
+  .edit-icon img{
+   transform: translateY(-7%);
+  }
+  .edit-date{
+    width:4rem;
+    border:none;
+  }
+  #editFax button.edit-date-block:hover {
+    background:$white !important;
+    color: #333;
+  }
+  .edit-date-block input:focus, input:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+.edit-info{
+    font-weight: bold;
+}
+.modal-dialog .modal-content{
+    border-radius: 0;
+}
+.modal-content .modal-body{
+padding:0;
+}
