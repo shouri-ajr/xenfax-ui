@@ -1,3 +1,5 @@
+import { NumbersComponent } from './numbers/numbers.component';
+import { HeaderComponent } from './header/header.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -16,15 +18,12 @@ import { ModelEditFaxComponent } from './model-edit-fax/model-edit-fax.component
   declarations: [
     AppComponent,
     HeaderComponent,
-    LeftnavComponent,
     NumbersComponent,
     DocumentsComponent,
-    SendfaxComponent
-
+    SendfaxComponent,
     TablesListComponent,
-    InnerPageComponent
-    ModelEditFaxComponent
-
+    InnerPageComponent,
+    ModelEditFaxComponent,
     DocumentsComponent,
     SignatureModelComponent
   ],

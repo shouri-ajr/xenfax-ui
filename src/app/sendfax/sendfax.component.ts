@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-sendfax',
@@ -11,5 +11,12 @@ export class SendfaxComponent implements OnInit {
 
   ngOnInit() {
   }
+  invoiceModelPopUp: boolean = false;
+
+
+  openInvoiceMode(){
+    this.invoiceModelPopUp = true;
+}
+
 
 } 

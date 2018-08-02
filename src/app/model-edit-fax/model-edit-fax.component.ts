@@ -12,5 +12,9 @@ export class ModelEditFaxComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  signaturePopUp:boolean = false;
+  signPopup(){
+    this.signaturePopUp = true;
+  }
+  
 }

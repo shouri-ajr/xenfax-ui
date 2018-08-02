@@ -1,11 +1,7 @@
-<div class="modal pop-up-invoice" id="invoice">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <!-- Modal body -->
-            <div class="modal-body">
+
                 <section id="editFax">
                     <div class="text-dark eidt-topbar">
-                        <button type="button" class="btn btn-white" data-toggle="modal" data-target="#signature">
+                        <button type="button" class="btn btn-white" (click)='signPopup()' >
                             <span class="edit-icon">
                                 <img src="../../assets/images/Sign.png" class="img-fluid" />
                             </span>
@@ -98,7 +94,12 @@
                         </section>
                     </div>
                 </section>
-            </div>
+<div class="modal fade in show customStyleSign" id="signature"  *ngIf='signaturePopUp'>
+        <div class="modal-dialog modal-lg ">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <app-signature-model></app-signature-model>
+                </div>
+             </div>
         </div>
-    </div>
-</div>
+    </div> 

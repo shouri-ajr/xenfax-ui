@@ -28,14 +28,14 @@
                                                 <div class="document-box position-relative rounded border">
                                                     <a href="javascript:void(0);" class="doc-close bg-primary text-white rounded-circle">&times;</a>
                                                 </div>
-                                                <a href="javascript:void(0);" class="doc-edit border rounded position-relative rounded border pl-3 pr-3 text-muted small" data-toggle="modal" data-target="#invoice"><i class="fas fa-pen"></i> Edit</a>
+                                                <a  class="doc-edit border rounded position-relative rounded border pl-3 pr-3 text-muted small" (click)='openInvoiceMode()'><i class="fas fa-pen"></i> Edit</a>
                                             </li>
                                             <li class="text-center mr-4 float-left">
                                                     <span class="small d-block text-dark pb-1">Xenvoice</span>
                                                     <div class="document-box position-relative rounded border">
                                                         <a href="javascript:void(0);" class="doc-close bg-primary text-white rounded-circle">&times;</a>
                                                     </div>
-                                                    <a href="javascript:void(0);" class="doc-edit border rounded position-relative rounded border pl-3 pr-3 text-muted small"><i class="fas fa-pen"></i> Edit</a>
+                                                    <a  class="doc-edit border rounded position-relative rounded border pl-3 pr-3 text-muted small" data-toggle="modal" data-target="#invoice"><i class="fas fa-pen"></i> Edit</a>
                                                 </li>
                                         </ul>
       
@@ -74,4 +74,13 @@
             
         </div>
         </div>
-      
+<div class="modal pop-up-invoice fade in show "  id="invoice" #invoiceModel *ngIf='invoiceModelPopUp'>
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <!-- Modal body -->
+            <div class="modal-body">
+                <app-model-edit-fax></app-model-edit-fax>
+            </div>
+        </div>
+    </div>
+</div> 
