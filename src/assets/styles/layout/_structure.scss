@@ -24,10 +24,22 @@ h5{
     text-transform: uppercase;
     font-weight: 600;
 }
-.modal-body, .modal-content, .modal-header{
-    border-radius:0px;
+.modal{
+    overflow: auto;
 }
+.modal-body, .modal-content, .modal-header{
+    border-radius:0px; 
+}
+.modal-header{
+    padding:0px;
+}
+
 .modal{
     display: block;
     padding-right: 17px;
+}
+.fade.show{
+    background-color: rgba(101, 100, 100, 0.34901960784313724) !important;
+    transform: transition 1s ease-in-out;
+
 }

@@ -18,12 +18,13 @@
 </li>
 </ul>
 </div>
-<button type="button" class="close" data-dismiss="modal">&times;</button>
+<a class="close" (click)="closeSigPopUp()">&times;</a>
 </div>
-<div class="modal-body">
+<div class="modal-body tab-white">
 <div class="tab-content">
-<div *ngIf='savedSignature' class="savedSignatures tab-pane fade in active show" id="savedSignatures">
-       <h5>Saved Signatures</h5>
+<div *ngIf='savedSignature' class="savedSignatures text-center tab-pane fade in active show" id="savedSignatures">
+      
+    <h5>Saved Signatures</h5>
        <div class="selectedSign">
            <img src="../../assets/images/sign.jpg" alt="Signature">
        </div>
@@ -57,8 +58,11 @@
         </div>
     </div>
    </div>
+
+
+
 </div>
-<div  *ngIf='drawSignature' class="drawSign tab-pane fade in active show" id="drawInIt">
+<div  *ngIf='drawSignature' class="drawSign text-center tab-pane fade in active show" id="drawInIt">
    <h5>Draw In It Signatures</h5>
    <div class="drawSignWMouse">
        <p>Draw your signature with your mouse.</p>
@@ -84,7 +88,7 @@
      </div>
     </div>
 </div>
-<div *ngIf='typeSignature' class="typeInItSign tab-pane fade in active show" id="tyepInIt">
+<div *ngIf='typeSignature' class="typeInItSign text-center tab-pane fade in active show" id="tyepInIt">
    <h5>Type In It Signatures</h5>
    <div class="signTypeing">
        <p>Type in your name</p>
@@ -108,7 +112,7 @@
      </div>
     </div>
 </div>
-<div *ngIf='uploadSignature' class="upLoadSignatures tab-pane fade in active show" id="uploadSign">
+<div *ngIf='uploadSignature' class="upLoadSignatures text-center tab-pane fade in active show" id="uploadSign">
    <h5>Upload Signatures</h5>
    <div class="upLoadSigSec">
        <p>Upload a picture of your signature</p>

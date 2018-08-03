@@ -16,12 +16,20 @@ export class ModelEditFaxComponent implements OnInit {
   @Output() closeEFaxModal = new EventEmitter();
 
   signaturePopUp:boolean = false;
+  closeEditFax: boolean = false;
   signPopup(){
     this.signaturePopUp = true;
   }
 
+  closeSignUp(closeSigModal){
+    if(closeSigModal == true ){
+      this.signaturePopUp = false;
+    }
+  }
+
   closeEditFaxModal(){
-   this.closeEFaxModal.emit();
+    this.closeEditFax = true;
+   this.closeEFaxModal.emit(this.closeEditFax);
   }
   
 }
