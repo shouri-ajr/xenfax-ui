@@ -1,25 +1,28 @@
 <!--Inner Page Main Container-->
 <div class="container">
         <div class="row justify-content-md-center">
-            <div class="col col-lg-8 mt-4 bg-white shadow-lg">
+            <div class="col col-12 col-md-12 col-lg-10 col-xl-8 mt-4 bg-white shadow-lg">
                 <div class="row justify-content-md-center">
                     <div class="w-75 row pb-3">
-                    <div class="col col-lg-1 col-md-1"></div>
-                    <div class="col col-lg-10 col-md-10 p-0 ml-3">
+                    <div class="col col-1 hidden-xm-down"></div>
+                    <div class="col col-10 p-0 ml-3">
                             <h3 class="pt-4 text-center text-dark">Send Fax</h3>
                     </div>
                     </div>
                 </div>
                 <div class="row justify-content-md-center">
                         <div class="w-75 row pb-3">
-                            <div class="col col-lg-1 col-md-1">
+                            <div class="col col-1 hidden-xm-down">
                                 <span class="srl-no d-block text-center bg-light bg-dark rounded-circle text-muted"><strong>1</strong></span>
                             </div>
-                            <div class="col col-lg-10 col-md-10 p-0 ml-3">
-                                    <div class="rounded d-flex p-3 pl-4 pr-4 bg-light bg-dark">
-                                        <button type="button" class="btn bg-transparent text-dark">Add files</button>
-                                        <button type="button" class="btn bg-transparent text-dark">Browse</button>
-                                        <button type="button" class="btn bg-transparent text-dark small">(Only PDF files)</button>
+                            <div class="col col-10 p-0 ml-3">
+                                    <div class="rounded d-flex p-3 pl-5 pr-5 bg-light bg-dark">
+                                        <span class="bg-transparent text-dark text-center">Add files</span>
+                                        <label for="add-file" class="d-block add-file-label bg-transparent btn focus m-0">
+                                            <input type="file" id="add-file">
+                                            Browse
+                                        </label>
+                                        <span class="bg-transparent text-dark small text-center">(Only PDF files)</span>
                                     </div>
                                     <div class="pt-4">
                                         <ul class="list-unstyled m-0">
@@ -45,24 +48,24 @@
                 </div>
                 <div class="row justify-content-md-center">
                         <div class="w-75 row pb-3">
-                        <div class="col col-lg-1 col-md-1">
+                        <div class="col col-1 hidden-xm-down">
                           <span class="srl-no srl-no-two d-block text-center bg-light bg-dark rounded-circle text-muted"><strong>2</strong></span>
                         </div>
-                        <div class="col col-lg-10 col-md-10 p-0 ml-3">
+                        <div class="col col-10 p-0 ml-3">
                             <div class="form-group">
                                 <label for="fax-no" class="text-dark">Enter Fax Number</label>
                                 <input type="text" class="form-control" id="fax-no" placeholder="Eg. +1 212 9876543">
                             </div>
-      
+       
                         </div>
                         </div>
                 </div>
                 <div class="row justify-content-md-center">
                         <div class="w-75 row pb-3">
-                        <div class="col col-lg-1 col-md-1">
+                        <div class="col col-1 hidden-xm-down">
                             
                         </div>
-                        <div class="col col-lg-10 col-md-10 p-0 ml-3">
+                        <div class="col col-10 p-0 ml-3">
                             <div class="form-group text-center">
                                 <input type="submit" class="form-control d-inline-block w-50 btn btn-primary" value="Send">
                             </div>

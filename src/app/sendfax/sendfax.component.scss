@@ -8,13 +8,23 @@
 }
 
 
-.bg-light .bg-transparent{
+.bg-light{
+  .bg-transparent{
     @include prefix(flex, 1 1 auto, 'webkit' 'ms' 'moz');
     font-size: 16px;
+  }
+  span.bg-transparent{
+    height: 33px;
+    line-height: 33px;
+  }
 }
-.bg-light .bg-transparent:focus{
-    @include prefix(box-shadow, 0 0 1px rgba(102, 102, 102, 0.75), 'webkit' 'moz');
-    background-color: #fff !important;
+.bg-light {
+  .bg-transparent{
+    &:focus, &.focus{
+      @include prefix(box-shadow, 0 0 1px rgba(102, 102, 102, 0.75), 'webkit' 'moz');
+      background-color: #fff !important;
+    }
+  }
 }
 .bg-light.bg-dark {
   background-color: #f1f1f1 !important;
@@ -79,5 +89,8 @@
   &:hover{
     color: #888;
   }
+}
+.add-file-label{
+  input{display: none;}
 }
 
