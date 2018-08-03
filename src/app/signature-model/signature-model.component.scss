@@ -24,8 +24,10 @@
   background: none;
   border-radius: 0px;
 }
-.customStyleSign .modal-header .close {
-  margin-top: -.6rem;
+.modal-header .close {
+  margin-top: 0.5rem !important;
+  padding: 0px !important;
+  margin-right: 0.6rem !important;
 }
 .savedSignatures,
 .upLoadSignatures,

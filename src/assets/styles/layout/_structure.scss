@@ -25,8 +25,12 @@ h5{
     font-weight: 600;
 }
 .modal-body, .modal-content, .modal-header{
-    border-radius:0px;
+    border-radius:0px; 
 }
+.modal-header{
+    padding:0px;
+}
+
 .modal{
     display: block;
     padding-right: 17px;
