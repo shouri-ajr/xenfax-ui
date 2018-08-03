@@ -11,9 +11,12 @@ button.btn{
 .edit-sig, .edit-contnet {
     padding-top:3rem;
   }
-  .edit-bg-light{
+  .edit-sig img{
+    width:40%;
+  }
+   .edit-bg-light{
       background:$bg-light;
-}
+    }
   .editDoc{
    width:90%;
    margin:0 auto;
