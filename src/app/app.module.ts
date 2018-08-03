@@ -1,7 +1,9 @@
+import { LeftnavComponent } from './leftnav/leftnav.component';
 import { NumbersComponent } from './numbers/numbers.component';
 import { HeaderComponent } from './header/header.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { DocumentsComponent } from './documents/documents.component';
@@ -25,10 +27,15 @@ import { ModelEditFaxComponent } from './model-edit-fax/model-edit-fax.component
     InnerPageComponent,
     ModelEditFaxComponent,
     DocumentsComponent,
+    LeftnavComponent,
     SignatureModelComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, 
+    RouterModule.forRoot([
+      { path: '', component:AppComponent },
+      { path: 'sendfax', component: SendfaxComponent}
+    ])
   ],
   providers: [ ],
   bootstrap: [AppComponent]
