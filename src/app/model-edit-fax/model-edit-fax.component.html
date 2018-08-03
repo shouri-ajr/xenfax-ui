@@ -42,9 +42,9 @@
                             <option>18</option>
                         </select>
 
-                        <button type="button" class="btn edit-btn-flat" click='closeEditFaxModal()'>
+                        <a type="button" class="btn edit-btn-flat" (click)='closeEditFaxModal()'>
                             Cancel
-                        </button>
+                        </a>
                         <button type="button" class="btn btn-primary">
                             Continue
                         </button>
@@ -98,7 +98,7 @@
         <div class="modal-dialog modal-lg ">
             <div class="modal-content">
                 <div class="modal-body">
-                    <app-signature-model></app-signature-model>
+                    <app-signature-model (closeSignModal)="closeSignUp($event)"></app-signature-model>
                 </div>
              </div>
         </div>

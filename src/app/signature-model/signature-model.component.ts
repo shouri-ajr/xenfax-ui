@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-signature-model',
@@ -13,7 +13,9 @@ export class SignatureModelComponent implements OnInit {
   ngOnInit() {
   }
 
+@Output() closeSignModal = new EventEmitter;
 
+  public  closeSigModal: boolean = true;
    public savedSignature: boolean = true;
    public drawSignature: boolean = false;
    public typeSignature: boolean = false;
@@ -48,5 +50,11 @@ export class SignatureModelComponent implements OnInit {
     }
    }
 
+
+   closeSigPopUp(){
+    // alert('h1');
+     this.closeSigModal = true;
+     this.closeSignModal.emit(this.closeSigModal);
+   }
 
 }
