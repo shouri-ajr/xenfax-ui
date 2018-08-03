@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-model-edit-fax',
@@ -12,9 +12,16 @@ export class ModelEditFaxComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  @Output() closeEFaxModal = new EventEmitter();
+
   signaturePopUp:boolean = false;
   signPopup(){
     this.signaturePopUp = true;
+  }
+
+  closeEditFaxModal(){
+   this.closeEFaxModal.emit();
   }
   
 }

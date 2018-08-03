@@ -7,6 +7,7 @@
     #{$property}: $value;
 }
 
+.main {	margin-left: 47px;padding: 0px 0px;	margin-top: 50px;}
 
 .bg-light .bg-transparent{
     @include prefix(flex, 1 1 auto, 'webkit' 'ms' 'moz');

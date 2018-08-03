@@ -14,6 +14,7 @@ import { SendfaxComponent } from './sendfax/sendfax.component';
 import { TablesListComponent } from './tables-list/tables-list.component';
 import { InnerPageComponent } from './inner-page/inner-page.component';
 import { ModelEditFaxComponent } from './model-edit-fax/model-edit-fax.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -28,12 +29,13 @@ import { ModelEditFaxComponent } from './model-edit-fax/model-edit-fax.component
     ModelEditFaxComponent,
     DocumentsComponent,
     LeftnavComponent,
-    SignatureModelComponent
+    SignatureModelComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule, 
     RouterModule.forRoot([
-      { path: '', component:AppComponent },
+      { path: '', component:HomeComponent },
       { path: 'sendfax', component: SendfaxComponent}
     ])
   ],
