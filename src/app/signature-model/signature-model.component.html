@@ -20,10 +20,11 @@
 </div>
 <a class="close" (click)="closeSigPopUp()">&times;</a>
 </div>
-<div class="modal-body">
+<div class="modal-body tab-white">
 <div class="tab-content">
 <div *ngIf='savedSignature' class="savedSignatures text-center tab-pane fade in active show" id="savedSignatures">
-       <h5>Saved Signatures</h5>
+      
+    <h5>Saved Signatures</h5>
        <div class="selectedSign">
            <img src="../../assets/images/sign.jpg" alt="Signature">
        </div>
@@ -57,6 +58,9 @@
         </div>
     </div>
    </div>
+
+
+
 </div>
 <div  *ngIf='drawSignature' class="drawSign text-center tab-pane fade in active show" id="drawInIt">
    <h5>Draw In It Signatures</h5>

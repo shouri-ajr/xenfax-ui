@@ -1,5 +1,9 @@
 .shadow {box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.15) !important;}
 .borderless td, .borderless th, .table.borderless thead th {   border: none !important;}
-.table{font-size: 16px;color: #666;}
+.table{font-size: 16px;color: #666; margin-bottom:0;}
 .align-self-center{    font-size: 20px;    color: #666;}
-.btn.btn-primary{padding:0.675rem 3.75rem}
+.btn.btn-primary{padding:0.475rem 3.75rem; font-size:17px;}
+.btn{border-radius:3px;}
+@media (max-width: 575px) { 
+    .btn.btn-primary{padding:0.475rem 1.75rem;}
+     }
