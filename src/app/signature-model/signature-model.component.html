@@ -2,25 +2,26 @@
 
 <!-- Modal Header -->
 <div class="modal-header">
-<div class="navTabsPart">
-<ul class="nav  nav-tabs">
-<li class="nav-item ">
- <a class="nav-link  show" [ngClass]="{ 'active' : savedSignature }" (click)="toggleTabs('saveSign')">Saved Signatures</a>
-</li>
-<li class="nav-item">
- <a class="nav-link show" [ngClass]="{ 'active' : drawSignature }" (click)="toggleTabs('drawSign')">Draw it in</a>
-</li>
-<li class="nav-item">
- <a class="nav-link show" [ngClass]="{ 'active' : typeSignature }" (click)="toggleTabs('typeSign')">Type it in</a>
-</li>
-<li class="nav-item">
- <a class="nav-link show " [ngClass]="{ 'active' :  uploadSignature }" (click)="toggleTabs('uploadSign')">Upload image</a>
-</li>
-</ul>
-</div>
+    <h4  class="modal-title">Signature</h4>
 <a class="close" (click)="closeSigPopUp()">&times;</a>
 </div>
 <div class="modal-body tab-white">
+    <div class="navTabsPart">
+        <ul class="nav  nav-tabs">
+            <li class="nav-item ">
+                 <a class="nav-link  show" [ngClass]="{ 'active' : savedSignature }" (click)="toggleTabs('saveSign')">Saved Signatures</a>
+            </li>
+            <li class="nav-item">
+                 <a class="nav-link show" [ngClass]="{ 'active' : drawSignature }" (click)="toggleTabs('drawSign')">Draw it in</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav-link show" [ngClass]="{ 'active' : typeSignature }" (click)="toggleTabs('typeSign')">Type it in</a>
+            </li>
+            <li class="nav-item">
+                 <a class="nav-link show " [ngClass]="{ 'active' :  uploadSignature }" (click)="toggleTabs('uploadSign')">Upload image</a>
+            </li>
+        </ul>
+    </div>
 <div class="tab-content">
 <div *ngIf='savedSignature' class="savedSignatures text-center tab-pane fade in active show" id="savedSignatures">
       
