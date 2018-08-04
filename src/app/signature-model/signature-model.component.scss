@@ -24,14 +24,15 @@
   background: none;
   border-radius: 0px;
 }
-.customStyleSign .modal-header .close {
-  margin-top: -.6rem;
+.modal-header .close {
+  margin-top: 0.5rem !important;
+  padding: 0px !important;
+  margin-right: 0.6rem !important;
 }
 .savedSignatures,
 .upLoadSignatures,
 .typeInItSign,
 .drawSign {
-  text-align: center;
   padding: 0.3rem;
 }
 .inserButton p {
@@ -100,7 +101,6 @@ ul.signList li a.deleteSign {
 .signTypeing p,
 .drawSignWMouse p {
   font-weight: 600;
-  color: #333;
 }
 .signTypeing .form-control {
   border-radius: 0px;
@@ -168,4 +168,7 @@ label {
 }
 input[type="file"] {
   display: none;
+}
+#savedSignatures, #drawInIt, #tyepInIt, #uploadSign{
+  background-color:#fff !important;
 }

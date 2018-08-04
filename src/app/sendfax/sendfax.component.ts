@@ -17,6 +17,11 @@ export class SendfaxComponent implements OnInit {
   openInvoiceMode(){
     this.invoiceModelPopUp = true;
 }
+closeEditFaxPop(closeEFpopup){
+  if(closeEFpopup == true){
+    this.invoiceModelPopUp = false;
+  }
+}
 
 
 } 
