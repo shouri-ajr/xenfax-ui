@@ -1,15 +1,15 @@
-<div class='main'>
+<div class='main bg-light'>
 <app-leftnav></app-leftnav>
 <app-header></app-header>
 <!--Inner Page Main Container-->
-<div class="container">
+<div class="p-4">
         <div class="row justify-content-md-center m-0">
-            <div class="col col-12 col-md-11 col-lg-10 col-xl-8 mt-4 bg-white shadow-lg">
+            <div class="col col-12 col-md-11 col-lg-10 col-xl-6 mt-4 bg-white">
                 <div class="row justify-content-md-center">
                     <div class="col-12 row pb-3 pl-0 pr-0 m-0">
                     <div class="col col-1 d-md-block d-none d-sm-block ml-lg-4 ml-md-3 ml-xl-4"></div>
                     <div class="col col-12 col-sm-10">
-                            <h3 class="pt-4 text-center text-dark">Send Fax</h3>
+                        <h3 class="pt-4 text-left text-dark h1">Send Fax</h3>
                     </div>
                     </div>
                 </div>
@@ -19,14 +19,18 @@
                                 <span class="srl-no d-block text-center bg-light bg-dark rounded-circle text-muted"><strong>1</strong></span>
                             </div>
                             <div class="col col-12 col-sm-10">
-                                <div class="bg-dark bg-light d-flex p-3 pl-lg-5 pl-md-5 pl-xl-5 rounded">
-                                    <span class="bg-transparent text-dark text-right d-md-block d-none d-sm-block pr-xl-4 pr-lg-4 pr-md-4 pr-3">Add files</span>
-                                    <label for="add-file" class="d-block add-file-label bg-transparent btn focus m-0 rounded">
-                                        <input type="file" id="add-file">
-                                        Browse
-                                    </label>
-                                    <span class="bg-transparent text-dark small text-left  pl-xl-4 pl-lg-4 pl-md-4 pl-3">(Only PDF files)</span>
+                        
+                                    <div class="form-group">
+                                        <label for="fax-no" class="text-dark col-form-label-lg">
+                                            Add files 
+                                            <span class="small pl-2">(Only PDF files)</span>
+                                        </label>
+                                        <input type="file" id="add-file" class="form-control" >
                                     </div>
+
+
+
+
                                     <div class="pt-4">
                                         <ul class="list-unstyled m-0">
                                             <li class="text-center mr-4 float-left">
@@ -56,7 +60,7 @@
                         </div>
                         <div class="col col-12 col-sm-10">
                             <div class="form-group">
-                                <label for="fax-no" class="text-dark">Enter Fax Number</label>
+                                <label for="fax-no" class="text-dark col-form-label-lg">Enter Fax Number</label>
                                 <input type="text" class="form-control" id="fax-no" placeholder="Eg. +1 212 9876543">
                             </div>
       
@@ -69,8 +73,8 @@
                             
                         </div>
                         <div class="col col-12 col-sm-10">
-                            <div class="form-group text-center">
-                                <input type="submit" class="form-control d-inline-block w-50 btn btn-primary rounded" value="Send">
+                            <div class="form-group text-right">
+                                <input type="submit" class="form-control d-inline-block w-25 btn btn-primary rounded " value="Send">
                             </div>
       
                         </div>
@@ -80,13 +84,16 @@
             
         </div>
         </div>
-    </div>
+
+</div>
+
+
 <div class="modal pop-up-invoice fade in show" id="invoice" #invoiceModel *ngIf='invoiceModelPopUp'>
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <!-- Modal body -->
             <div class="modal-body">
-                <app-model-edit-fax (closeEFaxModal)="closeEditFaxPop($event)"></app-model-edit-fax>
+                <app-model-edit-fax></app-model-edit-fax>
             </div>
         </div>
     </div>
