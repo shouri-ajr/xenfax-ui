@@ -3,8 +3,7 @@ import { Component, OnInit, ViewChild, Output, EventEmitter } from '@angular/cor
 @Component({
   selector: 'app-signature-model',
   templateUrl: './signature-model.component.html',
-  styleUrls: ['./signature-model.component.scss',
-  '../../assets/styles/main.scss']
+  styleUrls: ['./signature-model.component.scss']
 })
 export class SignatureModelComponent implements OnInit {
 

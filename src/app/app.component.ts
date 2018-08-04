@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: [
     '../assets/styles/main.scss',
     './app.component.scss'
-  ]
+  ],
+  encapsulation : ViewEncapsulation.None
 })
 export class AppComponent {
   title = 'xenfax-ui';
